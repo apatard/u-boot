@@ -75,3 +75,11 @@
 	regulator-min-microvolt = <430000>;
 	regulator-init-microvolt = <950000>;
 };
+
+&u2phy0_otg {
+	bootph-pre-ram;
+};
+
+&usbdrd_dwc3_0 {
+	bootph-pre-ram;
+};
