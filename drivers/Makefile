@@ -78,6 +78,7 @@ endif
 ifdef CONFIG_TPL_BUILD
 
 obj-$(CONFIG_TPL_MPC8XXX_INIT_DDR) += ddr/fsl/
+obj-$(CONFIG_USB_GADGET) += usb/common/
 
 endif
 
