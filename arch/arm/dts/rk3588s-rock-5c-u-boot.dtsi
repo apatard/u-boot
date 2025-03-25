@@ -9,3 +9,15 @@
 	cap-mmc-highspeed;
 	mmc-hs200-1_8v;
 };
+
+&usb_host0_xhci {
+	bootph-pre-ram;
+	bootph-some-ram;
+	dr_mode = "peripheral";
+	maximum-speed = "high-speed";
+};
+
+&usbdp_phy0 {
+	bootph-all;
+	maximum-speed = "high-speed";
+};
